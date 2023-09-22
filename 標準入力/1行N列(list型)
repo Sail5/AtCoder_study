@@ -1,0 +1,17 @@
+#参考サイト　https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
+
+#入力
+#A B
+
+#list型で受け取るとき
+s = input().split()
+
+#出力
+#リスト全て
+print(s)
+
+#listの1つ目の要素
+print(s[0])
+
+#listの1つ目の要素の1文字目
+print(s[0][0])
