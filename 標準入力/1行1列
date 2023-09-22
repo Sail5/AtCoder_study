@@ -1,0 +1,10 @@
+#参考ページ　https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
+
+#str型で受け取るとき
+x = input()
+
+#int型で受け取るとき
+x = int(input())
+
+#float型で受け取るとき （少数）
+x = float(input())
