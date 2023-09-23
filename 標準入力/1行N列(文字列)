@@ -1,0 +1,12 @@
+#参考サイト　https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
+
+#入力
+#東京 大阪 名古屋
+
+A,B,C = input().pplit()
+
+print(A)
+#東京
+
+print(A,B,C)
+#東京 大阪 名古屋
