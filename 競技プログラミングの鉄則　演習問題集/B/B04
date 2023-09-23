@@ -1,0 +1,13 @@
+N = input()
+
+Answer = 0
+
+for i in range(len(N)):
+  
+  kurai = (2 ** (len(N) - 1 - i))
+  if N[i] == '1':
+    Answer += kurai
+  else:
+    Answer += 0
+
+print(Answer)
