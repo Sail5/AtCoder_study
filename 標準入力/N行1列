@@ -1,0 +1,30 @@
+#参考サイト　https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
+
+#入力
+#N M
+#2
+#3
+#2
+#4
+
+#空のリストを作成して上から順に加えていく
+
+N,M = map(int,input().split())
+
+A = []
+
+for _ in range(M):
+  A.append(int(input()))
+
+print(A)
+
+
+
+
+#リスト内にfor
+
+N,M = map(int,input().split())
+
+A = [int(input()) for _ in range(M)]
+
+print(A)
