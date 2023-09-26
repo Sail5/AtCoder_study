@@ -1,0 +1,43 @@
+#参考サイト　https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
+
+#入力　行に変数
+#N
+#X1 X2 X3...
+#Y1 Y2 Y3...
+
+N = int(input())
+X = list(map(int,input().split()))
+Y = list(map(int,input().splitt()))
+
+
+#入力　列に変数
+#N
+#X1 Y1
+#X2 Y2
+#X3 Y3
+
+
+#x,yを独立させて格納する場合
+N = int(input())
+xy = [map(int,input().split()) for _ in range(N)]
+x,y = [list(i) for i in zip(*xy)
+
+
+#[x,y]として格納
+N = int(input())
+xy_list = [list(map(int,input().split())) for _ in range(N)]
+
+
+#入力例（int型とstr型混合）
+#N
+#1 a
+#2 b
+#3 c
+
+N = int(input())
+
+list = []
+
+for i in range(N):
+  a,b = input().split()
+  list.append([int(a),b])
