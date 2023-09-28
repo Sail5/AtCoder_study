@@ -1,0 +1,16 @@
+#参考サイト https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785
+
+#入力
+#N
+#T1 X1 Y1
+#T2 X2 Y2
+#T3 X3 Y3
+
+N = int(input())
+T = [0] * N   #N=3で T = [0,0,0]
+X = [0] * N
+Y = [0] * N
+
+for i in range(N):
+  T[i],X[i],Y[i] = map(int,input().split())
+
