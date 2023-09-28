@@ -1,0 +1,19 @@
+#以下のコードでTLEになってしまった
+
+T = int(input())
+N = int(input())
+L = [0] * N
+R = [0] * N
+A = [0] * T 
+
+for i in range(N):
+  L[i],R[i] = map(int,input().split())
+
+for i in range(T):
+  for j in range(N):
+   if L[j] < int(i)+0.5 < R[j] :
+     A[i] += 1
+     
+for i in range(T):
+  print(A[i])
+    
