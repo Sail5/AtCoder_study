@@ -1,0 +1,25 @@
+T = int(input())
+N = int(input())
+
+L = [0] * N
+R = [0] * N
+
+for i in range(N):
+  L[i],R[i] = map(int,input().split())
+
+#何時に何人入って何人出ていくのかをリストへ（前の時間との人数差）
+A = [0] * (T+1)
+for i in range(N):
+  A[L[i]] += 1
+  A[R[i]] -= 1
+
+#A[0]（はじめの人数）から毎時間の人数の出入りをforループで計算
+Answer = [0] * (T+1)
+Answer[0] = A[0]
+
+for i in range(1,T+1):
+  Answer[i] = Answer[i-1] + A[i]
+  
+#0時からT時までを表示
+for i in range(T):
+  print (Answer[i])
